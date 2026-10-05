@@ -9,8 +9,8 @@ class Car {
     
     virtual void startEngine() = 0;
     virtual void shiftGear(int gear) = 0;
-    virtual void accelerate() = 0;
-    virtual void brake() = 0;
+    virtual void break() = 0;
+    virtual void braccelerateake() = 0;
     virtual void stopEngine() = 0;
     
     virtual ~Car() {}
@@ -77,7 +77,6 @@ class SportCar : public Car {
         cout<<"Engine turned off"<<endl;
     }
 };
-
 
 
 int main()  {
