@@ -22,11 +22,11 @@ public:
 
 // Concrete Subject: a YouTube channel that observers can subscribe to
 class Channel : public IChannel {
- private:
+private:
     vector<ISubscriber*> subscribers;  // list of subscribers
     string name;
     string latestVideo;               // latest uploaded video title
- public:
+public:
     Channel(const string& name) {
         this->name = name;
     }
