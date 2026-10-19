@@ -11,7 +11,7 @@ public:
 
 // Receivers
 class Light {
-public:
+ public:
     void on()  { 
         cout << "Light is ON" << endl; 
     }
@@ -21,7 +21,7 @@ public:
 };
 
 class Fan {
-public:
+ public:
     void on()  { 
         cout << "Fan is ON" << endl; 
     }
@@ -32,10 +32,10 @@ public:
 
 // Concrete Command for Light
 class LightCommand : public Command {
-private:
+ private:
     Light* light;
 
-public:
+ public:
     LightCommand(Light* l) { 
         light = l; 
     }
@@ -51,10 +51,10 @@ public:
 
 // Concrete Command for Fan
 class FanCommand : public Command {
-private:
+ private:
     Fan* fan;
 
-public:
+ public:
     FanCommand(Fan* f) { 
         fan = f; 
     }
